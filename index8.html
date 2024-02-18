@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка на сервис</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            color: #090202;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 1px 4px rgb(243, 239, 239);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .card-info {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .card-info input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #ccc; /* Изменен цвет текста на серый */
+            background-color: #c5c3c3;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .button-container button {
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #84f384;
+            color: #048d31;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .info-line {
+            width: 100%;
+            border: 1px solid #c7bbbb;
+            margin: 1px 0;
+            text-shadow: #a8a6a6;
+        }
+    </style>
+</head>
+<body>
+<div class="header">Новая заявка на сервис</div>
+<div class="card-list">
+    <div class="info-line"></div>
+    <div class="card">
+        <div class="card-title">abs Название</div>
+        <div class="card-info">
+            <label>
+                <input type="text" placeholder="Плесень">
+            </label>
+        </div>
+        <div class="button-container">
+            <button>Добавить</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

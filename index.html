@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>> Экопоселки</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: transparent;
+            color: black;
+            padding: 10px 0;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .search-bar, .card-list {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .search-bar input[type="text"], .card {
+            width: 85%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 auto;
+            background-color: #f4f4f4; /* Цвет фона */
+        }
+
+        .search-bar::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+
+        .card-list {
+            text-align: center;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            max-height: 60vh;
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding: 10px 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Центрирование содержимого по вертикали */
+            margin-left: 14px;
+            margin-right: 10;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            margin-top:16px; /* Отступ между иконками и текстом */
+            margin-left: auto; /* Сдвиг вправо */
+            flex-direction: row;
+        }
+
+        .card-title {
+            font-size: 15px;
+            margin-right: -100px; /* Убираем отступ справа */
+            padding: 0;
+            display: flex; /* Применяем flexbox */
+            align-items: center; /* Выравниваем элементы по вертикали */
+            white-space: nowrap; /* Запрет переноса текста */
+            margin-top: -30px;
+        }
+
+
+        .card h2 {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .divider {
+            border-left: 1px solid #ccc;
+            height: 20px;
+            margin: 0 30px; /* Отступы между вертикальными полосками */
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        .number {
+            margin-left:5px;
+        }
+        .icon-container .number {
+            width: 0; /* Фиксированная ширина для цифр */
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="image.png" alt="Image" style="width: 9%; height: 10%;">> Экопоселки
+</div>
+<div class="search-bar">
+    <label>
+        <input type="text" placeholder="Поиск...">
+    </label>
+</div>
+<div class="card-list">
+    <div class="card">
+        <div class="card-title">> Green Cherry</div>
+        <div class="icon-container">
+            <img src="icon1.png" alt="icon1">
+            <span class="number">5</span>
+            <div class="divider"></div>
+            <img src="icon2.png" alt="icon2">
+            <span class="number">16</span>
+            <div class="divider"></div>
+            <img src="icon3.png" alt="icon3">
+            <span class="number">0</span>
+            <div class="divider"></div>
+            <img src="icon4.png" alt="icon4">
+            <span class="number">0</span>
+            <div class="divider"></div>
+        </div>
+    </div>
+</div>
+</body>

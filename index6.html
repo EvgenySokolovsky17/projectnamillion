@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работники</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            color: black;
+            padding: 15px 0;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .sub-header {
+            font-size: 12px;
+            color: #888888;
+            margin-left:50px;
+            margin-top: 1px;
+        }
+        .search-bar, .card-list {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .search-bar input[type="text"], .card {
+            width: 65%; /* Уменьшена ширина поля поиска */
+            margin-left: 2%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4; /* Цвет фона */
+        }
+
+        .search-bar button {
+            background-color: #84f384; /* Цвет кнопки */
+            color: #048d31; /* Цвет текста кнопки */
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .search-bar::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+
+        .card-list {
+            text-align: left; /* Выравнивание по левому краю */
+            padding: 0 8px;
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+            overflow-y: auto;
+            width: 136%;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-bottom: 1px;
+            padding: 5px 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Изменили на колонку */
+            margin-left: 10px; /* Увеличили отступ слева */
+            margin-top: 1%;
+        }
+
+        .card-title {
+            font-size: 14px;
+            margin: 5px 0; /* Уменьшили вертикальные отступы */
+            margin-left: 20px; /* Увеличили отступ слева */
+        }
+
+        .card-info p {
+            font-size: 12px; /* Уменьшили размер шрифта */
+            margin: 5px 0; /* Уменьшили вертикальные отступы */
+            margin-left: 20px; /* Увеличили отступ слева */
+        }
+
+
+        .info-line {
+            border-top: 1px solid #ccc;
+            width: 99%;
+            margin-left: -2px; /* Увеличили отступ слева */
+            margin-top: 1px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+        }
+
+        .info-line2 {
+            border-top: 1px solid #ccc;
+            width: 99%;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            display: flex;
+            justify-content: space-between; /* Располагаем элементы в другом краю */
+            align-items: center; /* Выравниваем по вертикали */
+        }
+        .icons-container {
+            display: flex;
+        }
+
+        .info-line2 p {
+            font-size: 10px; /* Размер шрифта */
+            color: #858383; /* Цвет текста */
+            margin: 5px 0; /* Уменьшили вертикальные отступы */
+            margin-left: 20px; /* Увеличили отступ слева */
+
+        }
+
+        .sub-title {
+            font-size: 12px; /* Размер подзаголовка */
+            color: #888888;
+            margin-top: -12px; /* Отступ между заголовком и подзаголовком */
+            text-align: right;
+            margin-right: 45%;
+        }
+        .sub-title:nth-child(3) {
+            margin-right: 30%; /* Изменяем правый отступ для третьего подзаголовка */
+        }
+        .icon-button {
+            background-color: transparent; /* Прозрачный фон */
+            border: none; /* Убираем границу */
+            cursor: pointer; /* Изменяем курсор при наведении */
+            margin-left: 10px; /* Отступ между иконками */
+        }
+
+        .icon-button img {
+            width: 20px; /* Ширина иконки */
+            height: 20px; /* Высота иконки */
+        }
+        .gray {
+            filter: grayscale(100%); /* Делаем иконки серыми */
+        }
+
+        .buttons button {
+            padding: 10px 16px;
+            font-size:9px;
+            background-color: white;
+            color: black;
+            border: 2px solid #04AA6D;
+            border-radius: 20%;
+            margin-left: 100px;
+            margin-top: -35px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;/* Добавлен отступ между кнопк
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="sub-header">Экопоселок</div>
+    <div class="sub-title">Объект</div> <!-- Добавлен подзаголовок -->
+    <div class="sub-title">Заявка</div> <!-- Добавлен подзаголовок -->
+    <img src="image.png" alt="Image" style="width: 9%; height: 10%;">> Green Eagle > XS > Плесень
+</div>
+<div class="search-bar">
+    <label>
+        <input type="text" placeholder="Поиск...">
+    </label>
+    <button>Добавить</button> <!-- Добавлена кнопка "Добавить" -->
+</div>
+<div class="card-list">
+    <div class="card">
+        <div class="card-title">Демонтаж</div>
+        <div class="card-info">
+            <div class="info-line">
+                <p>Расход: 0.00 руб</p>
+            </div>
+            <div class="buttons">
+                <button>Добавить</button> <!-- Добавлена кнопка "Добавить" -->
+            </div>
+            <div class="info-line2">
+                <p>02.01.2024 16:22</p>
+                <div class="icons-container">
+                    <button class="icon-button gray"><img src="icon2.png" alt="Icon 2"></button>
+                    <button class="icon-button gray"><img src="icon3.png" alt="Icon 3"></button>
+                    <button class="icon-button"><img src="icon4.png" alt="Icon 4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

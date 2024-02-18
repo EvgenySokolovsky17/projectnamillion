@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экопоселки</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: transparent;
+            color: black;
+            padding: 15px 0;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .sub-header {
+            font-size: 12px;
+            color: #888888;
+            margin-left:50px;
+            margin-top: 1px;
+        }
+
+        .search-bar, .card-list {
+            text-align: center;
+            margin-top: 1px;
+            margin-bottom: 10px;
+            position: relative;
+            display: flex; /* Добавлено для создания гибкой структуры */
+        }
+
+        .search-bar input[type="text"], .card {
+            width: 130%; /* Уменьшена ширина поля поиска */
+            margin-left: 19px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4; /* Цвет фона */
+        }
+
+        .search-bar button {
+            margin-left: 25%; /* Кнопка будет выровнена по правому краю */
+            background-color: #84f384; /* Цвет кнопки */
+            color: #048d31; /* Цвет текста кнопки */
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .search-bar::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+
+        .card-list {
+            text-align: center;
+            padding: 0 6px;
+            display: flex;
+            max-height: 40vh;
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding: 25px 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Изменение на вертикальное расположение */
+            align-items: flex-start; /* Выравнивание содержимого к левому краю */
+            margin-left: 14px;
+            margin-right: 10px;
+        }
+
+        .card-title {
+            font-size: 15px;
+            margin-top: -14px; /* Отступ между заголовком и текстом */
+            text-align: left; /* Выравнивание текста заголовка к левому краю */
+        }
+
+        .info-container {
+            text-align: left; /* Выравнивание текста информации к левому краю */
+            font-size: 16px;
+            margin-bottom: 10px; /* Отступ между текстом информации и иконками */
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+
+        .info-line{
+            border-top: 1px solid #ccc;
+            width: 100%;
+            margin-left: -2px; /* Увеличили отступ слева */
+            margin-top: 1px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+        }
+        .sub-title {
+            font-size: 12px; /* Размер подзаголовка */
+            color: #888888;
+            margin-top: -12px; /* Отступ между заголовком и подзаголовком */
+            text-align: right;
+            margin-right: 45%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="sub-header">Экопоселок</div>
+    <div class="sub-title">Объект</div> <!-- Добавлен подзаголовок -->
+    <img src="image.png" alt="Image" style="width: 9%; height: 10%;">> Green Eagle > XS
+</div>
+<div class="search-bar">
+    <label>
+        <input type="text" placeholder="Поиск...">
+    </label>
+    <button>Добавить</button> <!-- Добавлена кнопка "Добавить" -->
+</div>
+<div class="card-list">
+    <div class="card">
+        <div class="card-title">> Плесень</div>
+        <div class="info-line">
+            <div class="info-container">
+                <div class="widget">
+                    <ul class="widget-list">
+                        <img src="icon4.png" alt="icon4"><span>Демонтаж</span><br>
+                        <img src="icon4.png" alt="icon4"><span>Очистка</span><br>
+                        <img src="icon3.png" alt="icon3"><span>Обработка</span><br>
+                        <img src="icon4.png" alt="icon4"><span>Уборка</span><br>
+                        <img src="icon2.png" alt="icon2"><span>Защита</span><br>
+                        <img src="icon2.png" alt="icon2"><span>Монтаж</span><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

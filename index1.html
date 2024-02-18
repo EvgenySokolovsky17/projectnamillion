@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Service App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", sans-serif;
+            background-color: #ffffff; /* Белый фон */
+            text-align: center;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        .text {
+            font-size: 24px;
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Расстояние между кнопками */
+            align-items: center; /* Выравнивание по центру */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        .button {
+            background-color: #f3efef; /* Серый цвет */
+            color: black;
+            border: none;
+            padding: 15px 50px; /* Увеличение отступов */
+            border-radius: 7px; /* Закругление краев */
+            font-size: 16px;
+            cursor: pointer;
+            width: 80%;
+            text-align: left; /* Выравнивание текста слева */
+        }
+
+        .author-info {
+            font-size: 18px;
+            margin-top: 60px; /* Отступ сверху */
+        }
+
+        .author-info a {
+            color: #f69520; /* Цвет ссылки */
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .footer p:first-child {
+            color: #888; /* Серый цвет текста */
+            font-size: 10px; /* Уменьшенный размер шрифта */
+        }
+        .footer :first-child {
+            margin-bottom: -6px; /* Изменяем отступ снизу */
+        }
+        .footer p:last-child:before {
+            content: url('icon.png'); /* Добавляем иконку */
+            margin-right: 5px; /* Добавляем отступ между иконкой и текстом */
+        }
+        .footer p:last-child {
+            color: green; /* Меняем цвет текста на зеленый */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="image5.png" alt="Description" class="image">
+    <div class="text">House Service App</div>
+    <div class="button-container">
+        <button class="button">Users</button>
+        <button class="button">Villages</button>
+    </div>
+    <div class="author-info">
+        Anatolii Stepanov<br>
+        <a href="#">Сменить аккаунт</a>
+    </div>
+</div>
+<div class="footer">
+    <p>Created by</p>
+    <p>Green Zyland</p>
+</div>
+</body>
+</html>

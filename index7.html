@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работники</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            color: black;
+            padding: 15px 0;
+            text-align: left;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .sub-header {
+            font-size: 12px;
+            color: #888888;
+            margin-left:50px;
+            margin-top: 1px;
+        }
+        .search-bar, .card-list {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .search-bar input[type="text"], .card {
+            width: 65%; /* Уменьшена ширина поля поиска */
+            margin-left: 2%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4; /* Цвет фона */
+        }
+
+        .search-bar button {
+            background-color: #84f384; /* Цвет кнопки */
+            color: #048d31; /* Цвет текста кнопки */
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .search-bar::after {
+            content: "";
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+
+        .card-list {
+            text-align: left; /* Выравнивание по левому краю */
+            padding: 0 8px;
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+            overflow-y: auto;
+            width: 136%;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-bottom: 1px;
+            padding: 5px 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Изменили на колонку */
+            margin-left: 10px; /* Увеличили отступ слева */
+            margin-top: 1%;
+        }
+
+        .card-title {
+            font-size: 14px;
+            margin: 5px 0 5px 20px;
+        }
+
+        .card-info p {
+            font-size: 12px; /* Уменьшили размер шрифта */
+            /* Уменьшили вертикальные отступы */
+            /* Увеличили отступ слева */
+            margin: 5px 0 5px 20px;
+        }
+
+        .info-line2 {
+            border-top: 1px solid #ccc;
+            width: 99%;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 1px;
+            display: flex;
+            justify-content: space-between; /* Располагаем элементы в другом краю */
+            align-items: center; /* Выравниваем по вертикали */
+        }
+
+        .info-line2 p {
+            font-size: 10px; /* Размер шрифта */
+            color: #858383; /* Цвет текста */
+            /* Уменьшили вертикальные отступы */
+            /* Увеличили отступ слева */
+            margin: 5px 0 5px 20px;
+
+        }
+
+        .sub-title {
+            font-size: 12px; /* Размер подзаголовка */
+            color: #888888;
+            margin-top: -12px; /* Отступ между заголовком и подзаголовком */
+            text-align: right;
+            margin-right: 55%;
+        }
+        .sub-title:nth-child(3) {
+            margin-right: 30%; /* Изменяем правый отступ для третьего подзаголовка */
+        }
+
+        .icon-button img {
+            width: 20px; /* Ширина иконки */
+            height: 20px; /* Высота иконки */
+        }
+
+
+        .buttons button {
+            padding: 10px 16px;
+            font-size:9px;
+            background-color: white;
+            color: black;
+            border: 2px solid #04AA6D;
+            border-radius: 20%;
+            margin-left: 100px;
+            margin-top: -35px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="sub-header">Объект</div>
+    <div class="sub-title">Заявка</div> <!-- Добавлен подзаголовок -->
+    <div class="sub-title">Работа</div> <!-- Добавлен подзаголовок -->
+    <img src="image.png" alt="Image" style="width: 9%; height: 10%;">> XS > Плесень > Демонтаж
+</div>
+<div class="search-bar">
+    <label>
+        <input type="text" placeholder="Поиск...">
+    </label>
+    <button>Добавить</button> <!-- Добавлена кнопка "Добавить" --><!-- Перенесена строка и изменены стили -->
+</div>
+<p style="color: red; font-size: 15px; margin-left: 100px; margin-top: 1px; margin-right: 1%;">Итоговые расходы: 300.00 руб.</p>
+<div class="card-list">
+    <div class="card">
+        <div class="card-title">Демонтаж</div>
+        <div class="card-info">
+            <p>Крепеж</p> <!-- Добавлен текст "Крепеж" -->
+            <div class="info-line2">
+                <p>02.01.2024 16:23</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка на сервис</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            color: #090202;
+            padding: 15px 0;
+            text-align: left;
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 1px 4px rgb(243, 239, 239);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+
+        .card-title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+
+        .card-info {
+            margin-bottom: 10px;
+            width: 100%;
+            column-count: 2; /* Два столбца */
+            column-gap: 10px; /* Отступ между столбцами */
+        }
+
+        .card-info input[type="text"] {
+            width: 100%; /* Ширина 100% для заполнения столбцов */
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #ccc; /* Изменен цвет текста на серый */
+            background-color: #e8e5e5;
+            margin-bottom: 5px;
+        }
+
+        .additional-tasks {
+            margin-top: 10px;
+        }
+
+        .info-line {
+            width: 100%;
+            border: 1px solid #c7bbbb;
+            margin: 1px 0;
+            text-shadow: #888888;
+        }
+
+        .sub-title {
+            font-size: 15px; /* Размер подзаголовка */
+            color: #888888;
+            margin-top: 10%; /* Минимальный отступ */
+            margin-left: 10%;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .button-container button {
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #84f384;
+            color: #048d31;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="sub-title">Демонтаж</div> <!-- Добавлен подзаголовок -->
+<div class="header">Добавить расходы для работы</div>
+<div class="card-list">
+    <div class="info-line"></div>
+    <div class="card">
+        <div class="card-title">abs Название</div>
+        <div class="card-info">
+            <label>
+                <input type="text" placeholder="Позиция">
+                <input type="text" placeholder="Позиция">
+                <input type="text" placeholder="Позиция">
+                <input type="text" placeholder="Сумма">
+                <input type="text" placeholder="Сумма">
+                <input type="text" placeholder="Сумма">
+            </label>
+        </div>
+        <div class="additional-tasks">
+            <div class="info-line"></div>
+            <div class="card-title">Вы можете добавить дополнительные задачи вызвав это окно еще раз</div>
+        </div>
+        <div class="button-container">
+            <button>Добавить</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
